@@ -5,7 +5,7 @@ date: 2018-04-03
 display_date: "April 2018"
 ---
 
-*From River to Robots: Using art to explore our conversations about automation*
+*From Rivera to Robots: Using art to explore our conversations about automation*
 
 ## I. The Totems of American Industry
 
