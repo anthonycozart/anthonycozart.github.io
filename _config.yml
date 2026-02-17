@@ -1,0 +1,48 @@
+# Site settings
+title: Anthony Cozart
+description: "Applied scientist working on tech policy issues."
+# baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://anthonycozart.github.io" # the base hostname & protocol for your site
+
+# linkedin_username: anthonycozart
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Permalink structure
+permalink: /:title/
+
+# Pagination (optional)
+# paginate: 5
+# paginate_path: "/page:num/"
+
+# Show excerpts on homepage
+# show_excerpts: true
+
+# Date format
+# date_format: "%B %d, %Y"
+
+# Navigation (customize these pages)
+# header_pages:
+#   - about.md
+#   - projects.md
+
+# Google Analytics (optional - add your tracking ID)
+# google_analytics: UA-NNNNNNNN-N

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
+  {% feed_meta %}
+  {% seo %}
+</head>
+<body>
+  {{ content }}
+  {% if page.layout == 'post' %}
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  {% endif %}
+</body>
+</html>
