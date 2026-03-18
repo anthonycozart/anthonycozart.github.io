@@ -5,7 +5,7 @@ date: 2026-03-14
 display_date: "March 2026"
 ---
 
-**Last month felt consequential**
+## Last month felt consequential
 
 AI, tech, and policy converged around two topics last month: the DoW, and Claude Code.
 
@@ -13,11 +13,11 @@ Many writers covered the Department of War’s showdown with Anthropic over how 
 
 Relatedly, Claude Code is software that makes Claude immensely more useful. It gives Claude more context and has tools, skills, and other facets that help Claude perform tasks autonomously. It “spawns” “agents” that write code, problem solve, and decide their next turn, including when to stop. It’s been the talk of SF and the AI internet since November, when the frontier Opus 4.5 model was released. It’s scary, impressive, and incredibly fun. The WSJ described users going on [“Claude benders”](https://www.wsj.com/tech/ai/anthropic-claude-code-ai-7a46460e?mod=Searchresults&pos=1&page=1&gaa_at=eafs&gaa_n=AWEtsqc7GwfAbKfixLDOvK_ZbtGw6thBu5VW1ULWu5ckCJf_BmNFyWOmYcjgEgRsOFg%3D&gaa_ts=69b9e486&gaa_sig=BdoDB33mX4rA-fxRRQkxGV7POidk5V3uojlze7_POdCu5KE3_6zjhu2CbFgAd4g7_u1Cc97aIpL3VlLrVcyO_Q%3D%3D) over the holidays. I get it\!
 
-**And AI is weird: Enter OpenClaw**
+## And AI is weird: Enter OpenClaw
 
 A few weeks ago, we went to an event at the De Young Museum, and as we were walking through the galleries, a friend mentioned they were hooked on reading about Openclaw on Reddit. I’d never heard of it, and they explained it is a personal AI assistant with concerningly few guardrails and its own social network of agents. When we got home, I also went on Reddit. Yikes.
 
-**My idea**
+## My idea
 
 One post really caught my eye. Someone wrote that you should ask your agent to:
 
@@ -25,7 +25,7 @@ One post really caught my eye. Someone wrote that you should ask your agent to:
 
 This led me to the following idea: Ask a large language model this question a thousand times, and then use the same technology to evaluate the model’s responses to tease out what ChatGPT, Claude, and Gemini think is helpful and valuable. 
 
-**Why is this interesting to me?**
+## Why is this interesting to me?
 
 First, the wording is so vague—“something,” “help,” and “somewhere”—that humans will respond very differently to this question.
 
@@ -35,7 +35,7 @@ Third, just as we can ask a human why they chose their answer, we can do the sam
 
 While I don’t work at an AI lab, I’m so curious about how LLMs work and their effects on our economy, daily lives, and beliefs. Researchers increasingly use LLMs to study LLMs. This project is a very small way to learn. My research experience, programming background, and inexpensive APIs make this possible.
 
-**What is helpful?**
+## What is helpful?
 
 There are hundreds, maybe thousands, of benchmarks that evaluate LLM capabilities. This is not another. Instead, I’m interested in what each model *thinks* is a helpful or valuable action, and if the model’s action is actually valuable.
 
@@ -43,7 +43,7 @@ For example, does the LLM respond with an artifact that is genuinely new or nove
 
 The first time I asked Claude this prompt it created a cheat sheet of linux terminal commands. I would have been equally happy if it responded with a link to the first Google search result. Claude’s answer was convenient, but not incrementally valuable.
 
-**Research Design**
+## Research Design
 
 *Here’s what I hope to accomplish:*
 
@@ -91,5 +91,5 @@ The first time I asked Claude this prompt it created a cheat sheet of linux term
       1. High confidence but low novelty → this is specific, measurable “failure mode”  
       2. Low novelty → is this a user failure mode? Or, alternatively, evidence of LLMs success, that LLM and web search are converging?
 
-9. Further ideas \- to come\!
+9. Extensions \- to come\!
 
