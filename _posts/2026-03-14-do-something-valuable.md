@@ -15,7 +15,7 @@ Relatedly, Claude Code is software that makes Claude immensely more useful. It g
 
 ## And AI is weird: Enter OpenClaw
 
-A few weeks ago, we went to an event at the De Young Museum, and as we were walking through the galleries, a friend mentioned they were hooked on reading about Openclaw on Reddit. I’d never heard of it, and they explained it is a personal AI assistant with concerningly few guardrails and its own social network of agents. When we got home, I also went on Reddit. Yikes.
+A few weeks ago, we went to an event at the De Young Museum, and as we were walking through the galleries, a friend mentioned they were hooked on reading about OpenClaw on Reddit. I’d never heard of it, and they explained it is a personal AI assistant with concerningly few guardrails and its own social network of agents. When we got home, I also went on Reddit. Yikes.
 
 ## My idea
 
@@ -33,7 +33,7 @@ Second, asking this to an LLM introduces another dimension of variability, due t
 
 Third, just as we can ask a human why they chose their answer, we can do the same for an LLM. Except faster and cheaper.
 
-While I don’t work at an AI lab, I’m so curious about how LLMs work and their effects on our economy, daily lives, and beliefs. Researchers increasingly use LLMs to study LLMs. This project is a very small way to learn. My research experience, programming background, and inexpensive APIs make this possible.
+While I don’t work at an AI lab, I’m so curious about how LLMs work and their effects on our economy, daily lives, and beliefs. Researchers increasingly use LLMs to study LLMs. This project is a very small way to do the same to learn. My research experience, programming background, and inexpensive APIs make this possible.
 
 ## What is helpful?
 
