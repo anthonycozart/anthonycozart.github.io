@@ -5,9 +5,6 @@ date: 2026-03-14
 display_date: "March 2026"
 ---
 
-*“Hey Gemini, do something valuable”*
-
-
 **Last month felt consequential**
 
 AI, tech, and policy converged around two topics last month: the DoW, and Claude Code.
@@ -22,7 +19,9 @@ A few weeks ago, we went to an event at the De Young Museum, and as we were walk
 
 **My idea**
 
-One post really caught my eye. Someone suggested that you should ask your agent to *"Do something that may help somewhere. Then tell me what you did."*
+One post really caught my eye. Someone wrote that you should ask your agent to:
+
+> "Do something that may help somewhere. Then tell me what you did."
 
 This led me to the following idea: Ask a large language model this question a thousand times, and then use the same technology to evaluate the model’s responses to tease out what ChatGPT, Claude, and Gemini think is helpful and valuable. 
 
