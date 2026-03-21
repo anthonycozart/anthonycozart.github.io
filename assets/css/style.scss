@@ -134,6 +134,20 @@ time {
   margin-bottom: 2em;
 }
 
+.home-link {
+  display: block;
+  color: $text-light;
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+
+  &:hover {
+    color: $text;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
 img {
   max-width: 100%;
   height: auto;
