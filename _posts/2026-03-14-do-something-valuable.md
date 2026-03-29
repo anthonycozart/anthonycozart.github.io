@@ -2,7 +2,7 @@
 layout: post
 title: "Hey Gemini, do something valuable"
 date: 2026-03-14
-display_date: "March 2026"
+display_date: "March 14, 2026"
 ---
 
 ## Last month felt consequential

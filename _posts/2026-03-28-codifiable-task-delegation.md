@@ -2,7 +2,7 @@
 layout: post
 title: "Will all codifiable tasks be delegated?"
 date: 2026-03-28
-display_date: "March 2026"
+display_date: "March 28, 2026"
 ---
 
 > “Anything that can be described in a [skill.md file](https://agentskills.io/home) won’t be part of your job as a data scientist in the future.” 

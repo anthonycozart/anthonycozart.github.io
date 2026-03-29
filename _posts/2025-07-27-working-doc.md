@@ -2,7 +2,7 @@
 layout: post
 title: "Notes on how I work"
 date: 2025-07-27
-display_date: "July 2025"
+display_date: "July 27, 2025"
 ---
 
 This "working document" is a collection of ideas about how I work and what's important to me.
