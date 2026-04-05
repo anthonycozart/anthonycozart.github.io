@@ -7,7 +7,7 @@ display_date: "April 2026"
 
 ## Intent and trust signals in AI instructions
 
-*This project analyzes AI instructions to understand developer intent and trust. The results are in [part 2](../ai-skills-part-2/), and the methodology in [part 3](../ai-skills-part-3/). Note that these posts are not on my website home page.*
+*This project analyzes AI instructions to understand developer intent and trust. The results are in [part 2](../ai-skills-part-2/), and the methodology in [part 3](../ai-skills-part-3/). Code [here](https://github.com/anthonycozart/ai-skills). Note that these posts are not on my website home page.*
 
 ## Intro
 
