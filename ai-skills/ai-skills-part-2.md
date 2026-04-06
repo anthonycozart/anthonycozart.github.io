@@ -2,7 +2,7 @@
 layout: post
 title: "Intent and trust signals in AI instructions: Results"
 date: 2026-04-05
-display_date: "April 2026"
+display_date: "April 5, 2026"
 ---
 
 *This post shows empirical results for this idea ([part 1](../ai-skills-part-1/)) based on this methodology ([part 3](../ai-skills-part-3/)).*
@@ -47,8 +47,8 @@ In Part 1, I explained constraints points toward a trust explanation, but their 
 
 **7. Instructions with process-specification intents suggest both trust and task explanations.**  
 
-For prescribed discretion, shown on the left, the top quartile of constraints is most common. The developer added explicit prohibitions on top of a fixed sequence. That's excess specification beyond what task determinism requires, which leans toward trust explanation. BUT, (4th / 4th) is also common, suggesting some of these process-specification instructions may not be agent instructions, but instead boilerplate policy documents with many constraints and steps.
+Prescribed discretion (left chart): Most instructions fall in the top quartile for constraints (the right most column), meaning developers provide explicit prohibitions on top of a fixed sequence. That indicates more specification than the task may require, suggests trust concerns are driving the design. The one exception worth noting: a cluster of (top quartile constraints and decisions) instructions that may not be agent instructions at all, but boilerplate policy documents that happen to look like them.
 
-For adaptive discretion, shown on the right, the decision quartiles and constraint quartiles are similar. (4th / 4th) is the most common combination, showing above average constraints and above average decisions. Judgment is delegated but bounded.
+Adaptive discretion (right chart): Because adaptive discretion accounts for roughly 60% of all instructions, its quartile distributions largely mirror the overall sample, making  interpretation difficult. The more meaningful comparison is with the prescribed discretion group on the left, where the constraint pattern diverges noticeably. That said, the top right cell showing the top quartile of both constraints and decisions is the most common combo, which suggests that judgment is delegated but bounded.
 
 ![Decision vs constraint density for process-specification](../figures/2_8_process_spec_decision_constraint_matrix.png)

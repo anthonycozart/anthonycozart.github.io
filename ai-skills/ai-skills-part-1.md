@@ -2,12 +2,14 @@
 layout: post
 title: "Intent and trust signals in AI instructions: Idea"
 date: 2026-04-05
-display_date: "April 2026"
+display_date: "April 5, 2026"
 ---
 
-## Intent and trust signals in AI instructions
-
-*This project analyzes AI instructions to understand developer intent and trust. The results are in [part 2](../ai-skills-part-2/), and the methodology in [part 3](../ai-skills-part-3/). Code [here](https://github.com/anthonycozart/ai-skills). Note that these posts are not on my website home page.*
+*This project analyzes AI instructions to understand developer intent and trust. 3 takeaways:*
+*1. Adoption of AI "scaffolding" is low among non-enterprise users*
+*2. There are 3x as many AI instructions written to define procedures than to provide contextual info*
+*3. Signals of "trust deficits" vary by human intent*
+*The results are in [part 2](../ai-skills-part-2/), and the methodology in [part 3](../ai-skills-part-3/). Note that these posts are not on my website home page.*
 
 ## Intro
 
@@ -23,7 +25,7 @@ To answer these questions, we’d need both the human-agent conversations and th
 
 ## My idea
 
-A slightly different, narrower question may be more tractable: *What are developers and data scientists writing in repeatable instructions for their agents?* These instructions are increasingly common, and analyzing them could reveal what tasks are delegated repeatedly, and what the authors (human developers) are concerned about.
+A slightly different, narrower question may be more tractable: *What are developers and data scientists writing in repeatable instructions for their agents?* These instructions are increasingly common, and analyzing them could reveal what tasks developers intend to delegate repeatedly, and what the authors (devs) are concerned about.
 
 ## What are agent instructions?
 
@@ -41,14 +43,19 @@ I’ve been thinking about this question as a data science manager trying to dec
 
 While the AI labs share [many reasons](https://www.anthropic.com/engineering/writing-tools-for-agents) to build this scaffolding, as a user, they boil down to two reasons:
 
-1. **Task Explanation** - The user writes an instruction because the task genuinely has one right answer. This specificity reflects the nature of the task itself, not the user’s beliefs about the agent.  
+1. **Task Explanation** - The user writes an instruction because the task has a narrow set of correct answers. This specificity reflects the nature of the task itself and the importance of contextual information, not the user’s beliefs about the agent.  
 2. **Trust Explanation** - The user writes an instruction because they don't trust the agent to “get it right,” so they spell it out. This specificity reflects their belief about the agent's limitations.
 
-It’s helpful to think about how these explanations might reshape a distribution of delegated tasks and the value created by AI.
+It’s helpful to think about how instructions might reshape a distribution of delegated tasks and the value created by AI.
 
 ![Delegation value distribution](../figures/0_1_histogram.png)
 
-The task explanation shifts the distribution to the right. Better context → better answers → in less time → more value. The trust explanation could shift the distribution to the right, or up, or both. Greater trust → fewer human-agent interactions → more value on individual tasks. Greater trust → more use cases → more value in aggregate.
+The task explanation shifts the distribution to the right:
+> Better context → better answers → in less time → more value. 
+
+The trust explanation could shift the distribution to the right, or up, or both: 
+> Greater trust → fewer human-agent interactions → more value on individual tasks. 
+> Greater trust → more use cases → more value in aggregate.
 
 The challenge, however, is the tasks and trust explanations are deeply intertwined. Instructions also reflect a task’s properties, like complexity and what’s at stake, as much as the developer’s trust in their agent. By providing instructions, humans get both better tasks and higher levels of trust. 
 
@@ -65,18 +72,19 @@ Here’s how we’ll turn this idea into an empirical exploration:
 2. We’ll sample the developer platform GitHub to create a corpus of instruction files.
 
 3. For each file in our corpus, we’ll use LLMs to determine the:
-
-| *Dimension* | *Description* | *Data* |
-| :---- | :---- | :---- |
-| **Object** | The aspect of agent behavior the instruction is shaping (e.g., API error handling) | Open-ended |
-| **Functional intent** | The primary and secondary reasons a human wrote the instruction, that is, the gap or concern that motivated it | Categorical:<br>Context-provision<br>Preference-alignment<br>Risk-mitigation<br>Tool-orchestration<br>Process-specification |
-| **Discretion** | The extent of decisions the agent must make to follow the instruction | Categorical:<br>Prescribed<br>Adaptive |
-| **Decisions** | The distinct decision points to follow the instruction | Count |
-| **Constraints** | The explicit constraints in the instruction (e.g., "always use X") | Count |
+    a. **Object** | Open-ended | The aspect of agent behavior the instruction is shaping (e.g., API error handling)
+    b. **Functional intent** | Categorical | The primary and secondary reasons a human wrote the instruction, that is, the gap or concern that motivated it
+    c. **Discretion** | Categorical | The extent of decisions the agent must make to follow the instruction
+    d. **Decisions** | Count | The distinct decision points to follow the instruction
+    e. **Constraints** | Count | The explicit constraints in the instruction (e.g., "always use X")
 
 4. Finally, we’ll explore the task vs. trust explanations by examining the interactions between {functional intent, discretion, decisions, and constraints}. 
 
-Here’s how I’m thinking about this. Intent is a “prior” on the likely explanation—think of this as our “first guess.”
+## Task vs. trust explanations
+
+Here’s how I’m thinking about this:
+
+Intent is a “prior” on the likely explanation—think of this as our “first guess.”
 
 * Risk-mitigation → Trust  
 * Preference-alignment → Trust  
@@ -92,7 +100,16 @@ I had the idea to interact *intent* and *discretion*, but brainstorming with Cla
 
 ![Intent and discretion matrix](../figures/0_2_matrix.png)
 
-*Want to see results? See [part 2](../ai-skills-part-2/).*
+## Want to see results? 
+
+See [part 2](../ai-skills-part-2/). Here's the first one:
+
+**1. Adoption of agent instructions is very low among non-enterprise users.** 
+
+Just 3.5% of a 250k random sample of (project-level) repositories had markers of AI tooling, and only 1.1% had codified skill.md instructions. Those that did had a median of 4 instructions. Among these early adopters, instruction adoption is very similar across logarithmic-scale levels of activity.
+
+![Number of instruction files per repository](../figures/1_1_skill_file_histogram.png)
+
 
 [^1]:  The outage [may not](https://www.aboutamazon.com/news/company-news/amazon-outage-ai-financial-times-correction) have been caused by 100% AI code; that it is being talked about this way, as a tangible concern even if apocryphal, is telling.
 
