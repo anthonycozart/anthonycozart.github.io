@@ -77,11 +77,11 @@ Here’s how we’ll turn this idea into an empirical exploration:
 2. We’ll sample the developer platform GitHub to create a corpus of instruction files.
 
 3. For each file in our corpus, we’ll use LLMs to determine the:
-    1. **Object** | Open-ended | The aspect of agent behavior the instruction is shaping (e.g., API error handling)
-    2. **Functional intent** | Categorical | The primary and secondary reasons a human wrote the instruction, that is, the gap or concern that motivated it
-    3. **Discretion** | Categorical | The extent of decisions the agent must make to follow the instruction
-    4. **Decisions** | Count | The distinct decision points to follow the instruction
-    5. **Constraints** | Count | The explicit constraints in the instruction (e.g., "always use X")
+* **Object** (Open-ended) The aspect of agent behavior the instruction is shaping (e.g., API error handling)
+* **Functional intent** (Categorical) The primary and secondary reasons a human wrote the instruction, that is, the gap or concern that motivated it
+* **Discretion** (Categorical) The extent of decisions the agent must make to follow the instruction
+* **Decisions** (Count) The distinct decision points to follow the instruction
+* **Constraints** (Count) The explicit constraints in the instruction (e.g., "always use X")
 
 4. Finally, we’ll explore the task vs. trust explanations by examining the interactions between {functional intent, discretion, decisions, and constraints}. 
 
