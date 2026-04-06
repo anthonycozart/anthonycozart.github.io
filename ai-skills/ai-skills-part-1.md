@@ -6,9 +6,13 @@ display_date: "April 5, 2026"
 ---
 
 *This project analyzes AI instructions to understand developer intent and trust. 3 takeaways:*
+
 *1. Adoption of AI "scaffolding" is low among non-enterprise users*
+
 *2. There are 3x as many AI instructions written to define procedures than to provide contextual info*
+
 *3. Signals of "trust deficits" vary by human intent*
+
 *The results are in [part 2](../ai-skills-part-2/), and the methodology in [part 3](../ai-skills-part-3/). Note that these posts are not on my website home page.*
 
 ## Intro
@@ -55,6 +59,7 @@ The task explanation shifts the distribution to the right:
 
 The trust explanation could shift the distribution to the right, or up, or both: 
 > Greater trust → fewer human-agent interactions → more value on individual tasks. 
+
 > Greater trust → more use cases → more value in aggregate.
 
 The challenge, however, is the tasks and trust explanations are deeply intertwined. Instructions also reflect a task’s properties, like complexity and what’s at stake, as much as the developer’s trust in their agent. By providing instructions, humans get both better tasks and higher levels of trust. 
@@ -72,11 +77,11 @@ Here’s how we’ll turn this idea into an empirical exploration:
 2. We’ll sample the developer platform GitHub to create a corpus of instruction files.
 
 3. For each file in our corpus, we’ll use LLMs to determine the:
-    a. **Object** | Open-ended | The aspect of agent behavior the instruction is shaping (e.g., API error handling)
-    b. **Functional intent** | Categorical | The primary and secondary reasons a human wrote the instruction, that is, the gap or concern that motivated it
-    c. **Discretion** | Categorical | The extent of decisions the agent must make to follow the instruction
-    d. **Decisions** | Count | The distinct decision points to follow the instruction
-    e. **Constraints** | Count | The explicit constraints in the instruction (e.g., "always use X")
+    1. **Object** | Open-ended | The aspect of agent behavior the instruction is shaping (e.g., API error handling)
+    2. **Functional intent** | Categorical | The primary and secondary reasons a human wrote the instruction, that is, the gap or concern that motivated it
+    3. **Discretion** | Categorical | The extent of decisions the agent must make to follow the instruction
+    4. **Decisions** | Count | The distinct decision points to follow the instruction
+    5. **Constraints** | Count | The explicit constraints in the instruction (e.g., "always use X")
 
 4. Finally, we’ll explore the task vs. trust explanations by examining the interactions between {functional intent, discretion, decisions, and constraints}. 
 
