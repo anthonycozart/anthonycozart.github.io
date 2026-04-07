@@ -59,10 +59,7 @@ Writing prompts to create my labels {object, intent, discretion, decisions, cons
   * Should I use tiebreakers? If so, in which direction?  
   * Word choice… e.g., does "partially" or "fully determined" more closely align with the distinction I am looking for?  
 2. *Given this, Claude suggested tricks that I mostly trusted.* For example, it suggested I ask the model to briefly state what decisions the agent must make before selecting the category, to explicitly encode chain-of-thought behavior.  
-3. *Some I did not.* For example, the following suggestion is very broad and I felt like it would lead to hallucinations:   
-    
-> "Could a developer with domain knowledge follow this instruction without asking clarifying questions about the instruction itself?"  
-    
+3. *Some I did not.* For example, the following suggestion is very broad and I felt like it would lead to hallucinations: "Could a developer with domain knowledge follow this instruction without asking clarifying questions about the instruction itself?"  
 4. *You need to have a prior.* Without it, prompt design can feel like p-hacking.  
 5. *Designing the discretion question was really hard.* I validated 4 or 5 specifications, and ultimately I don't think the specification I used is a great signal.  
 6. *Stepping back is so important.* I initially thought I might measure trust by asking about the scope in the "use when" part of the frontmatter. Higher measures of scope → asking more of the agent. But there was very little variation, for an obvious reason: developers use [claude.md](http://claude.md) files for general instructions, and [skill.md](http://skill.md) files for project-specific instructions. Duh.
