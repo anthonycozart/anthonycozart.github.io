@@ -4,6 +4,6 @@ layout: home
 
 I'm an applied scientist working on tech policy issues.
 
-I previously worked at a multilateral development bank, for several Fed officials, and at a law school. Outside of work, I love to bike and run in Marin, cook alongside my spouse, coach a local track team, and (occasionally) build things online.
+I previously worked at a multilateral development bank, for Fed Governor Michael Barr, and at Yale Law School. I have a MPP from Michigan, where I studied with [Alex Ralph](https://fordschool.umich.edu/faculty/alex-ralph) and taught public finance for Betsey Stevenson. Outside of work, I love to bike and run in Marin, cook alongside my spouse, coach a local [Special Olympics](https://www.specialolympics.org/) track team, and (occasionally) build things online.
 
-You can connect with me [here](https://www.linkedin.com/in/anthony-cozart/).
+You can connect with me [here](https://www.linkedin.com/in/anthony-cozart/) and see my GitHub [here](https://github.com/anthonycozart/).
