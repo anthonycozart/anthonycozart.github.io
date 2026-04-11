@@ -6,6 +6,8 @@ display_date: "April 2026"
 permalink: /ai-skills/ai-skills-part-1/
 ---
 
+**[Project Overview](https://anthonycozart.github.io/ai-skills/) · [Results](/ai-skills/ai-skills-part-2/) · [Methodology](/ai-skills/ai-skills-part-3/).**
+
 *This project analyzes AI instructions to understand developer intent and trust. 3 takeaways:*
 
 *1. Adoption of AI "scaffolding" is low among non-enterprise users*
@@ -13,8 +15,6 @@ permalink: /ai-skills/ai-skills-part-1/
 *2. There are 3x as many AI instructions written to define procedures than to provide contextual info*
 
 *3. Signals of "trust deficits" vary by human intent*
-
-*The results are in [part 2](/ai-skills/ai-skills-part-2/), and the methodology in [part 3](/ai-skills/ai-skills-part-3/).*
 
 ## Intro
 
