@@ -1,0 +1,191 @@
+<svg width="1100" height="580" viewBox="0 0 1100 580" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+    <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+  </filter>
+</defs>
+
+<style>
+  text { font-family: "Anthropic Sans", -apple-system, "system-ui", "Segoe UI", sans-serif; }
+  .section-num { font-size: 15px; font-weight: 600; fill: #1a7a5a; }
+  .section-label { font-size: 15px; font-weight: 600; fill: #1a1a19; }
+  .section-bar { fill: #1a7a5a; }
+  .card { fill: #fff; stroke: #e0dfda; stroke-width: 0.75; }
+  .card-title { font-size: 13px; font-weight: 600; fill: #1a1a19; }
+  .card-body { font-size: 11px; font-weight: 400; fill: #5a5a57; }
+  .card-stat { font-size: 11px; font-weight: 600; fill: #1a1a19; }
+  .card-accent { font-size: 10.5px; font-weight: 500; }
+  .note { font-size: 9.5px; fill: #8a8a87; }
+  .divider { stroke: #e8e7e3; stroke-width: 0.75; }
+  .bullet { fill: #1a7a5a; opacity: 0.6; }
+</style>
+
+<!-- Layout: 4 columns at x=20, 275, 530, 785. Width=230 each. Gap=25px. -->
+
+<!-- ================================================================ -->
+<!-- SECTION 1: Methods (left column, two stacked bubbles)            -->
+<!-- ================================================================ -->
+<rect x="20" y="18" width="3" height="22" class="section-bar"/>
+<text x="30" y="34"><tspan class="section-num">1</tspan><tspan dx="6" class="section-label">Methods</tspan></text>
+
+<!-- Corpus bubble -->
+<rect x="20" y="50" width="230" height="130" rx="8" class="card" filter="url(#shadow)"/>
+<text x="40" y="76" class="card-title">GitHub SKILL.md Files</text>
+<text x="40" y="96" class="card-body">Agent instruction files from public</text>
+<text x="40" y="112" class="card-body">repositories with AI coding tool</text>
+<text x="40" y="128" class="card-body">directories (.claude, .cursor, .codex)</text>
+
+<line x1="40" y1="142" x2="230" y2="142" class="divider"/>
+
+<text x="40" y="162"><tspan class="card-stat">~16,000 files </tspan><tspan class="card-body">from </tspan><tspan class="card-stat">~3,000 repos</tspan></text>
+
+<!-- Methods bubble -->
+<rect x="20" y="195" width="230" height="226" rx="8" class="card" filter="url(#shadow)"/>
+
+<text x="40" y="229" class="card-body" style="fill:#1a1a19;font-weight:500">Sampling</text>
+<text x="40" y="247" class="card-body">Active repos in March 2026</text>
+
+<line x1="40" y1="263" x2="230" y2="263" class="divider"/>
+
+<text x="40" y="283" class="card-body" style="fill:#1a1a19;font-weight:500">Classification</text>
+<text x="40" y="301" class="card-body">Using Sonnet 4.6</text>
+
+<line x1="40" y1="317" x2="230" y2="317" class="divider"/>
+
+<text x="40" y="337" class="card-body" style="fill:#1a1a19;font-weight:500">Validation</text>
+<circle cx="48" cy="352" r="3.5" class="bullet"/>
+<text x="58" y="355" class="card-body">Agreement vs. GPT-5.4</text>
+<circle cx="48" cy="368" r="3.5" class="bullet"/>
+<text x="58" y="371" class="card-body">Compared to Haiku and Opus</text>
+<text x="58" y="387" class="card-body">to assess LLM capabilities</text>
+<circle cx="48" cy="400" r="3.5" class="bullet"/>
+<text x="58" y="403" class="card-body">Prompts iteratively developed</text>
+
+<!-- ================================================================ -->
+<!-- SECTION 2: Labels (column 2)                                     -->
+<!-- ================================================================ -->
+<rect x="275" y="18" width="3" height="22" class="section-bar"/>
+<text x="285" y="34"><tspan class="section-num">2</tspan><tspan dx="6" class="section-label">Labels</tspan></text>
+
+<!-- Intent card -->
+<rect x="275" y="50" width="230" height="190" rx="8" class="card" filter="url(#shadow)"/>
+<text x="295" y="76" class="card-title">Primary Intent</text>
+<text x="295" y="92" class="card-body" style="font-style:italic">Why did the human write this?</text>
+
+<rect x="295" y="102" width="190" height="20" rx="4" fill="#e1f5ee" stroke="#0f6e56" stroke-width="0.5"/>
+<text x="305" y="116" class="card-accent" style="fill:#0f6e56">context-provision</text>
+
+<rect x="295" y="127" width="190" height="20" rx="4" fill="#eeedfe" stroke="#534ab7" stroke-width="0.5"/>
+<text x="305" y="141" class="card-accent" style="fill:#534ab7">process-specification</text>
+
+<rect x="295" y="152" width="190" height="20" rx="4" fill="#faece7" stroke="#993c1d" stroke-width="0.5"/>
+<text x="305" y="166" class="card-accent" style="fill:#993c1d">risk-mitigation</text>
+
+<rect x="295" y="177" width="190" height="20" rx="4" fill="#faeeda" stroke="#854f0b" stroke-width="0.5"/>
+<text x="305" y="191" class="card-accent" style="fill:#854f0b">preference-alignment</text>
+
+<rect x="295" y="202" width="190" height="20" rx="4" fill="#e8f4fc" stroke="#2c6e9e" stroke-width="0.5"/>
+<text x="305" y="216" class="card-accent" style="fill:#2c6e9e">tool-orchestration</text>
+
+<!-- Other dimensions card (15px gap) -->
+<rect x="275" y="255" width="230" height="107" rx="8" class="card" filter="url(#shadow)"/>
+<text x="295" y="279" class="card-title">Other Dimensions</text>
+
+<circle cx="303" cy="300" r="3.5" class="bullet"/>
+<text x="313" y="304" class="card-body"><tspan style="font-weight:500;fill:#1a1a19">Discretion</tspan>  prescribed / adaptive</text>
+
+<circle cx="303" cy="320" r="3.5" class="bullet"/>
+<text x="313" y="324" class="card-body"><tspan style="font-weight:500;fill:#1a1a19">Decision count</tspan>  choice points</text>
+
+<circle cx="303" cy="340" r="3.5" class="bullet"/>
+<text x="313" y="344" class="card-body"><tspan style="font-weight:500;fill:#1a1a19">Constraint count</tspan>  prohibitions</text>
+
+<!-- ================================================================ -->
+<!-- SECTION 3: Interpretation (column 3)                             -->
+<!-- ================================================================ -->
+<rect x="530" y="18" width="3" height="22" class="section-bar"/>
+<text x="540" y="34"><tspan class="section-num">3</tspan><tspan dx="6" class="section-label">Interpretation</tspan></text>
+
+<!-- Task explanation -->
+<rect x="530" y="50" width="230" height="102" rx="8" class="card" filter="url(#shadow)"/>
+<rect x="530" y="50" width="230" height="32" rx="8" fill="#f0efe8" stroke="none"/>
+<rect x="530" y="70" width="230" height="12" fill="#f0efe8" stroke="none"/>
+<text x="550" y="72" class="card-title">Task Explanation</text>
+<text x="550" y="96" class="card-body">Instructions reflect the task's</text>
+<text x="550" y="112" class="card-body">limited solutions</text>
+<text x="550" y="134" class="card-body" style="font-style:italic;fill:#888">"The task demands specificity"</text>
+
+<!-- Trust explanation (15px gap) -->
+<rect x="530" y="167" width="230" height="114" rx="8" class="card" filter="url(#shadow)"/>
+<rect x="530" y="167" width="230" height="32" rx="8" fill="#faece7" stroke="none"/>
+<rect x="530" y="187" width="230" height="12" fill="#faece7" stroke="none"/>
+<text x="550" y="189" class="card-title">Trust Explanation</text>
+<text x="550" y="213" class="card-body">Instructions reflect concern</text>
+<text x="550" y="227" class="card-body">about the agent's ability</text>
+<text x="550" y="249" class="card-body" style="font-style:italic;fill:#888">"The human doesn't trust the</text>
+<text x="550" y="263" class="card-body" style="font-style:italic;fill:#888">agent to get it right"</text>
+
+<!-- ================================================================ -->
+<!-- SECTION 4: Results (column 4)                                    -->
+<!-- ================================================================ -->
+<rect x="785" y="18" width="3" height="22" class="section-bar"/>
+<text x="795" y="34"><tspan class="section-num">4</tspan><tspan dx="6" class="section-label">Results</tspan></text>
+
+<!-- 2x2 matrix card -->
+<rect x="785" y="50" width="230" height="204" rx="8" class="card" filter="url(#shadow)"/>
+
+<!-- Column headers -->
+<text x="910" y="68" text-anchor="middle" style="font-size:10px;fill:#5a5a57;font-weight:500">discretion</text>
+<text x="872" y="82" text-anchor="middle" style="font-size:9px;fill:#8a8a87">prescribed</text>
+<text x="962" y="82" text-anchor="middle" style="font-size:9px;fill:#8a8a87">adaptive</text>
+
+<!-- Vertical "intent" label -->
+<text x="803" y="150" text-anchor="middle" transform="rotate(-90 803 150)" style="font-size:10px;fill:#5a5a57;font-weight:500">intent</text>
+
+<!-- Row labels, rotated — centered on each cell -->
+<text x="823" y="119" text-anchor="middle" transform="rotate(-90 823 119)" style="font-size:8.5px;fill:#8a8a87">trust prior</text>
+<text x="823" y="179" text-anchor="middle" transform="rotate(-90 823 179)" style="font-size:8.5px;fill:#8a8a87">task prior</text>
+
+<!-- Grid cells — equal width columns (80px each) -->
+<!-- trust + prescribed -->
+<rect x="835" y="92" width="80" height="55" rx="3" fill="#faece7" stroke="#e8ddd8" stroke-width="0.5"/>
+<text x="875" y="112" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#993c1d">0.6%</text>
+<text x="875" y="125" text-anchor="middle" style="font-size:7.5px;fill:#993c1d">strong trust</text>
+<text x="875" y="134" text-anchor="middle" style="font-size:7.5px;fill:#993c1d">signal</text>
+
+<!-- trust + adaptive -->
+<rect x="920" y="92" width="80" height="55" rx="3" fill="#faeeda" stroke="#e8ddd8" stroke-width="0.5"/>
+<text x="960" y="112" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#854f0b">8.7%</text>
+<text x="960" y="125" text-anchor="middle" style="font-size:7.5px;fill:#854f0b">moderate trust</text>
+<text x="960" y="134" text-anchor="middle" style="font-size:7.5px;fill:#854f0b">signal</text>
+
+<!-- task + prescribed -->
+<rect x="835" y="152" width="80" height="55" rx="3" fill="#f0efe8" stroke="#e8ddd8" stroke-width="0.5"/>
+<text x="875" y="172" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#5a5a57">3.5%</text>
+<text x="875" y="185" text-anchor="middle" style="font-size:7.5px;fill:#5a5a57">ambiguous or</text>
+<text x="875" y="194" text-anchor="middle" style="font-size:7.5px;fill:#5a5a57">task signal</text>
+
+<!-- task + adaptive -->
+<rect x="920" y="152" width="80" height="55" rx="3" fill="#eeedfe" stroke="#e8ddd8" stroke-width="0.5"/>
+<text x="960" y="172" text-anchor="middle" style="font-size:10px;font-weight:600;fill:#534ab7">87.0%</text>
+<text x="960" y="185" text-anchor="middle" style="font-size:7.5px;fill:#534ab7">mixed, showing</text>
+<text x="960" y="194" text-anchor="middle" style="font-size:7.5px;fill:#534ab7">bounded trust</text>
+
+<!-- Note under matrix -->
+<text x="910" y="224" text-anchor="middle" class="note" style="font-style:italic">← more prescribed = more compensation</text>
+<text x="910" y="236" text-anchor="middle" class="note" style="font-style:italic">for perceived agent limitations</text>
+
+<!-- Key Findings (spans sections 3–4, 15px gap below Trust Explanation) -->
+<rect x="530" y="296" width="485" height="116" rx="8" fill="#fff" stroke="#534ab7" stroke-width="1" filter="url(#shadow)"/>
+<text x="550" y="322" style="font-size:12px;font-weight:600;fill:#534ab7">Key Findings</text>
+
+<text x="550" y="346" style="font-size:10px;font-weight:600;fill:#1a1a19">1.</text>
+<text x="564" y="346" class="card-body">Adoption is low: 3.5% of repos have AI tool markers; median 4 files</text>
+
+<text x="550" y="370" style="font-size:10px;font-weight:600;fill:#1a1a19">2.</text>
+<text x="564" y="370" class="card-body">3x as many instructions define process than provide context</text>
+
+<text x="550" y="394" style="font-size:10px;font-weight:600;fill:#1a1a19">3.</text>
+<text x="564" y="394" class="card-body">9 in 10 files are task-driven, though many show delegated but bounded judgment</text>
+
+</svg>

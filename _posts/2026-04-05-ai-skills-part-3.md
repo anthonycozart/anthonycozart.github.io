@@ -4,6 +4,7 @@ title: "Intent and trust signals in AI instructions: Methods"
 date: 2026-04-05
 display_date: "April 2026"
 permalink: /ai-skills/ai-skills-part-3/
+hidden: true
 ---
 
 *This post explains the methodology for this idea ([part 1](/ai-skills/ai-skills-part-1/)) and these results ([part 2](/ai-skills/ai-skills-part-2/)).*

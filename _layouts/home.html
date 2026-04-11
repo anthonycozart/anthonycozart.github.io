@@ -9,17 +9,20 @@ layout: default
   <section class="writing">
     <h2>Writing</h2>
     <ul>
-      {% for post in site.posts %}
+      {% for post in site.posts %}{% unless post.hidden %}
       <li>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
-      {% endfor %}
+      {% endunless %}{% endfor %}
     </ul>
   </section>
 
   <section class="writing">
     <h2>Projects</h2>
     <ul>
+      <li>
+        <a href="/ai-skills/">Intent and trust signals in AI instructions</a>
+      </li>
       <li>
         <a href="https://anthonycozart.github.io/fjord-ranger/">Fjord Ranger 🤖</a>
       </li>
