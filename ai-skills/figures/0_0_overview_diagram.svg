@@ -37,7 +37,7 @@
 
 <line x1="40" y1="142" x2="230" y2="142" class="divider"/>
 
-<text x="40" y="162"><tspan class="card-stat">~16,000 files </tspan><tspan class="card-body">from </tspan><tspan class="card-stat">~3,000 repos</tspan></text>
+<text x="40" y="162"><tspan class="card-stat">~33,000 files </tspan><tspan class="card-body">from </tspan><tspan class="card-stat">~2,700 repos</tspan></text>
 
 <!-- Methods bubble -->
 <rect x="20" y="195" width="230" height="226" rx="8" class="card" filter="url(#shadow)"/>

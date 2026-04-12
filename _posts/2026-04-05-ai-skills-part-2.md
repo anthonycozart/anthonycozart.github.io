@@ -2,12 +2,12 @@
 layout: post
 title: "Intent and trust signals in AI instructions: Results"
 date: 2026-04-05
-display_date: "April 2026"
+display_date: "April 5, 2026"
 permalink: /ai-skills/ai-skills-part-2/
 hidden: true
 ---
 
-*This post shows empirical results for this idea ([part 1](/ai-skills/ai-skills-part-1/)) based on this methodology ([part 3](/ai-skills/ai-skills-part-3/)).*
+**[Project Overview](https://anthonycozart.github.io/ai-skills/) · [Idea](/ai-skills/ai-skills-part-1/) · [Results](/ai-skills/ai-skills-part-2/) · [Methodology](/ai-skills/ai-skills-part-3/)**
 
 ## Takeaways
 
