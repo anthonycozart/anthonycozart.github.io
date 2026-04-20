@@ -59,7 +59,7 @@ Ultimately, the authors of this study accepted this information gap because it m
 
 *How* a human completes a long-horizon task is very different from the constraints placed on an LLM in this study. For example, the case study author makes hundreds of decisions based on emergent information—from Google searches, interviews, lunch conversations, formal feedback, and so on. In this study, the LLM takes a single turn. 
 
-**Stepping back, this evaluation framework is no longer the best aperture to understand the trajectory of AI progress.** 
+**Stepping back, this "one-shot" task evaluation framework is no longer the best aperture to understand the trajectory of AI progress.[^5]** 
 
 The question I want the authors to answer is whether an LLM *with powerful tools and structured context (together, the “operating system”)* can complete a task in at least 10% less time than a human with equivalent quality. Without the OS, we’re studying something different and disconnected, and risk drawing the wrong conclusions. Even if the path to transformative AI brings broad *and* abrupt changes, policymakers need clearer signals for both when considering policies like AI training, unemployment benefits, or [adjustment insurance](https://www.digitalistpapers.com/vol2/marinescu).
 
@@ -73,3 +73,5 @@ The question I want the authors to answer is whether an LLM *with powerful tools
 [^3]:  For short tasks, the 150-word context captures most of what a human would have when doing the task. For long tasks, the 150-word context window is a tiny fraction of what a human would have.
 
 [^4]:  *E.g.,* with hundreds of pages of context, we’d introduce variation in each model’s long-context reasoning, and early models would fail at much higher rates. Asking human evaluators to judge “equivalent quality” would also become much more expensive, and likely more inconsistent, thereby increasing the number of evals needed.
+
+[^5]: [GDPval (2025)](https://arxiv.org/abs/2510.04374) is a step in the right direction, by giving models access to their native tools, varying reasoning levels, providing detailed context, and leveraging an automated grader. But it has some of the same limitations, including one-shot answers, and is an expensive research design.
