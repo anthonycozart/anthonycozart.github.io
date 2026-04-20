@@ -26,7 +26,7 @@ Like METR, model human time horizons using logistic regressions.
 ## Results
 Unlike METR, the relationship between task success and duration is “consistently shallow.” This holds for several alternative specifications, leading the authors to conclude that capabilities are improving rapidly and “at a similar pace across task-durations." The curve is flat (and the slope is not stat sig) for many of the job families with the largest number of exposed tasks—including admin support, business ops, and healthcare. What’s more, as models improve, capabilities have shifted up, not out.
 
-## My reaction
+## My perspective
 This paper addresses a key limitation of METR’s research by including thousands of broadly-defined tasks from dozens of occupations. This scope, and the survey component, are more compelling.
 
 But the research design fails on knowledge-based and longer-horizon work. I’ll use two of the example tasks on page 21 to explain why. 
