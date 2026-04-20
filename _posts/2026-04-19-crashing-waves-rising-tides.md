@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "Crashing waves vs. rising tides"
+title: "Crashing waves or rising tides?"
 date: 2026-04-19
 display_date: "April 19, 2026"
 ---
 
 *Mertens, Matthias, et al. "Crashing Waves vs. Rising Tides: Preliminary Findings on AI Automation from Thousands of Worker Evaluations of Labor Market Tasks." [arXiv preprint arXiv:2604.01363](https://arxiv.org/pdf/2604.01363) (2026)*
 
-This recent paper caught my eye for many reasons, including that it disagrees with earlier research on whether AI capabilities improve abruptly or broadly. I explain why the answer depends on how you construct the tasks. 
+This recent paper caught my eye for many reasons, including that it disagrees with earlier research on whether AI capabilities improve or broadly over tasks. I explain why the answer depends on how you construct the tasks. 
 
 ## Key idea
 Build on [METR’s research](https://arxiv.org/pdf/2503.14499) by studying the shape of AI capability curves: Do models improve abruptly over some tasks, or do they increase broadly over most tasks? This question will shape the labor market impacts of more powerful AI systems, and inform the policy responses and political economy of displacement in the next \~2-5 years.
 
 ## Research design
-Identify O\*NET tasks → create “exam problems” → filter → LLMs solve → humans annotate → model
+Identify [O\*NET tasks](https://www.onetonline.org/search/task/) → create “exam problems” → filter → LLMs solve → humans annotate → model
 
 ## Data
 First, ask GPT-4 which text-based tasks an LLM could complete in at least 10% less time than a human with “equivalent quality.”[^1] This returns \~11,000 tasks across blue- and white-collar occupations.[^2] Then, ask GPT-4 to create multiple “exam problems” of each task, and filter those that do not adhere to the prompt, are missing key information, and/or are not representative. The difficulty level of each problem is “calibrated for an experienced worker,” and they should be practical, realistic, and written in language common to the occupation.
@@ -59,7 +59,10 @@ Ultimately, the authors of this study accepted this information gap because it m
 
 *How* a human completes a long-horizon task is very different from the constraints placed on an LLM in this study. For example, the case study author makes hundreds of decisions based on emergent information—from Google searches, interviews, lunch conversations, formal feedback, and so on. In this study, the LLM takes a single turn. 
 
-**Stepping back, this evaluation framework is no longer the best aperture to understand the trajectory of AI progress.** The question I want them to answer is whether an LLM *with powerful tools and structured context (together, the “operating system”)* can complete a task in at least 10% less time than a human with equivalent quality. Without the OS, we’re studying something different and disconnected, and risk drawing the wrong conclusions.
+**Stepping back, this evaluation framework is no longer the best aperture to understand the trajectory of AI progress.** 
+
+The question I want the authors to answer is whether an LLM *with powerful tools and structured context (together, the “operating system”)* can complete a task in at least 10% less time than a human with equivalent quality. Without the OS, we’re studying something different and disconnected, and risk drawing the wrong conclusions. Even if the path to transformative AI brings broad *and* abrupt changes, policymakers need clearer signals for both when considering policies like AI training, unemployment benefits, or [adjustment insurance](https://www.digitalistpapers.com/vol2/marinescu).
+
 
 --
 
