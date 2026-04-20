@@ -37,7 +37,7 @@ In the long task (\~4 hours), the LLM is asked to create a quarterly project sta
 
 This reflects the research design. Every task, regardless of duration, receives the same instructions and at most 150-words of context. This reduces potential noise from additional context, but introduces a systematic gap that grows with task duration. The more complex or ambiguous the task, the more the prompt likely *substitutes* for the information needed to solve the task in real life.[^3] In other words, longer tasks are transformed *more*.
 
-Here’s how I described this idea at dinner last night:
+**Here’s how I described this idea at dinner last night:**
 
 * The short task is like an art professor telling their students to sketch a water lily.  
 * The long task is like an art professor telling their students to paint a replica of a Monet water lily.  
@@ -46,7 +46,7 @@ Here’s how I described this idea at dinner last night:
 ![Water Lilies, 1906]({{ "/assets/images/2026-04-19-crashing-waves/monet-water-lilies-1933.1157.jpg" | relative_url }})  
 *Water Lilies, 1906. [Art Institute of Chicago](https://www.artic.edu/artworks/16568/water-lilies)*
 
-**Ok, so why does this matter?**
+## Why does this matter?
 
 This shortcoming cuts at the paper’s central finding. If long-horizon tasks are systematically easier than their real-world equivalents, then the relatively flat capability curves may reflect task construction, not a property of AI progress (nor the work it will displace one day). The “rising tide” conclusion rests on tasks that have been quietly leveled.
 
