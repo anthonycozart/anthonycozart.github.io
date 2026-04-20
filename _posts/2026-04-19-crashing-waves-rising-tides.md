@@ -7,7 +7,7 @@ display_date: "April 19, 2026"
 
 *Mertens, Matthias, et al. "Crashing Waves vs. Rising Tides: Preliminary Findings on AI Automation from Thousands of Worker Evaluations of Labor Market Tasks." [arXiv preprint arXiv:2604.01363](https://arxiv.org/pdf/2604.01363) (2026)*
 
-This recent paper caught my eye for many reasons, including that it disagrees with earlier research on whether AI capabilities improve or broadly over tasks. I explain why the answer depends on how you construct the tasks. 
+This recent paper caught my eye for many reasons, including that it disagrees with earlier research on whether AI capabilities improve abruptly or broadly over tasks. I explain why the answer depends on how you construct the tasks. 
 
 ## Key idea
 Build on [METR’s research](https://arxiv.org/pdf/2503.14499) by studying the shape of AI capability curves: Do models improve abruptly over some tasks, or do they increase broadly over most tasks? This question will shape the labor market impacts of more powerful AI systems, and inform the policy responses and political economy of displacement in the next \~2-5 years.
