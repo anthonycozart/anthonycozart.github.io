@@ -7,7 +7,7 @@ permalink: /ai-skills/ai-skills-part-3/
 hidden: true
 ---
 
-**[Project Overview](https://anthonycozart.github.io/ai-skills/) · [Idea](/ai-skills/ai-skills-part-1/) · [Results](/ai-skills/ai-skills-part-2/) · [Methodology](/ai-skills/ai-skills-part-3/)**
+**[Project Overview](https://anthony.cozart.com/ai-skills/) · [Idea](/ai-skills/ai-skills-part-1/) · [Results](/ai-skills/ai-skills-part-2/) · [Methodology](/ai-skills/ai-skills-part-3/)**
 
 ## Links
 

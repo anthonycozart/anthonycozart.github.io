@@ -6,7 +6,7 @@ display_date: "April 5, 2026"
 permalink: /ai-skills/ai-skills-part-1/
 ---
 
-**[Project Overview](https://anthonycozart.github.io/ai-skills/) · [Idea](/ai-skills/ai-skills-part-1/) · [Results](/ai-skills/ai-skills-part-2/) · [Methodology](/ai-skills/ai-skills-part-3/)**
+**[Project Overview](https://anthony.cozart.com/ai-skills/) · [Idea](/ai-skills/ai-skills-part-1/) · [Results](/ai-skills/ai-skills-part-2/) · [Methodology](/ai-skills/ai-skills-part-3/)**
 
 *This project analyzes AI instructions to understand developer intent and trust. 3 takeaways:*
 
